@@ -61,5 +61,5 @@ Carthage/Build
 fastlane/report.xml
 fastlane/screenshots
 
-#API Key Docs
-APIKeys.plist
+#API Keys
+ApiKeys.plist

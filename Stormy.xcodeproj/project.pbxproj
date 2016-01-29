@@ -16,9 +16,7 @@
 		430EF0DD1C56B83100F64F72 /* StormyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430EF0DC1C56B83100F64F72 /* StormyUITests.swift */; };
 		430EF0EE1C56B99C00F64F72 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 430EF0ED1C56B99C00F64F72 /* CurrentWeather.plist */; };
 		430EF0F01C56BA2800F64F72 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430EF0EF1C56BA2800F64F72 /* CurrentWeather.swift */; };
-		435E916D1C5AD5020065F85E /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435E916C1C5AD5020065F85E /* APIKeys.plist */; };
-		435E916F1C5ADC300065F85E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 435E916E1C5ADC300065F85E /* .gitignore */; };
-		435E91711C5AE28D0065F85E /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E91701C5AE28D0065F85E /* APIKeys.swift */; };
+		435E91731C5AE62F0065F85E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 435E91721C5AE62F0065F85E /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +52,7 @@
 		430EF0DE1C56B83100F64F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430EF0ED1C56B99C00F64F72 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CurrentWeather.plist; path = ../../../Downloads/CurrentWeather.plist; sourceTree = "<group>"; };
 		430EF0EF1C56BA2800F64F72 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
-		435E916C1C5AD5020065F85E /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
-		435E916E1C5ADC300065F85E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		435E91701C5AE28D0065F85E /* APIKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		435E91721C5AE62F0065F85E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +83,7 @@
 		430EF0B01C56B83100F64F72 = {
 			isa = PBXGroup;
 			children = (
+				435E91721C5AE62F0065F85E /* .gitignore */,
 				430EF0BB1C56B83100F64F72 /* Stormy */,
 				430EF0D01C56B83100F64F72 /* StormyTests */,
 				430EF0DB1C56B83100F64F72 /* StormyUITests */,
@@ -140,10 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				430EF0ED1C56B99C00F64F72 /* CurrentWeather.plist */,
-				435E916C1C5AD5020065F85E /* APIKeys.plist */,
-				435E91701C5AE28D0065F85E /* APIKeys.swift */,
 				430EF0C81C56B83100F64F72 /* Info.plist */,
-				435E916E1C5ADC300065F85E /* .gitignore */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,11 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435E91731C5AE62F0065F85E /* .gitignore in Resources */,
 				430EF0C71C56B83100F64F72 /* LaunchScreen.storyboard in Resources */,
-				435E916D1C5AD5020065F85E /* APIKeys.plist in Resources */,
 				430EF0EE1C56B99C00F64F72 /* CurrentWeather.plist in Resources */,
 				430EF0C41C56B83100F64F72 /* Assets.xcassets in Resources */,
-				435E916F1C5ADC300065F85E /* .gitignore in Resources */,
 				430EF0C21C56B83100F64F72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +277,6 @@
 			files = (
 				430EF0BF1C56B83100F64F72 /* ViewController.swift in Sources */,
 				430EF0F01C56BA2800F64F72 /* CurrentWeather.swift in Sources */,
-				435E91711C5AE28D0065F85E /* APIKeys.swift in Sources */,
 				430EF0BD1C56B83100F64F72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
