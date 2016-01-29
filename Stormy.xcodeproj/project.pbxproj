@@ -17,6 +17,8 @@
 		430EF0EE1C56B99C00F64F72 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 430EF0ED1C56B99C00F64F72 /* CurrentWeather.plist */; };
 		430EF0F01C56BA2800F64F72 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430EF0EF1C56BA2800F64F72 /* CurrentWeather.swift */; };
 		435E91731C5AE62F0065F85E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 435E91721C5AE62F0065F85E /* .gitignore */; };
+		435E91771C5AE74D0065F85E /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435E91761C5AE74D0065F85E /* ApiKeys.plist */; };
+		435E91791C5AE7740065F85E /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E91781C5AE7740065F85E /* ApiKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		430EF0ED1C56B99C00F64F72 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CurrentWeather.plist; path = ../../../Downloads/CurrentWeather.plist; sourceTree = "<group>"; };
 		430EF0EF1C56BA2800F64F72 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		435E91721C5AE62F0065F85E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		435E91761C5AE74D0065F85E /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		435E91781C5AE7740065F85E /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				430EF0ED1C56B99C00F64F72 /* CurrentWeather.plist */,
+				435E91761C5AE74D0065F85E /* ApiKeys.plist */,
+				435E91781C5AE7740065F85E /* ApiKeys.swift */,
 				430EF0C81C56B83100F64F72 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -251,6 +257,7 @@
 				430EF0EE1C56B99C00F64F72 /* CurrentWeather.plist in Resources */,
 				430EF0C41C56B83100F64F72 /* Assets.xcassets in Resources */,
 				430EF0C21C56B83100F64F72 /* Main.storyboard in Resources */,
+				435E91771C5AE74D0065F85E /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 			files = (
 				430EF0BF1C56B83100F64F72 /* ViewController.swift in Sources */,
 				430EF0F01C56BA2800F64F72 /* CurrentWeather.swift in Sources */,
+				435E91791C5AE7740065F85E /* ApiKeys.swift in Sources */,
 				430EF0BD1C56B83100F64F72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
