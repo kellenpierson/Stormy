@@ -19,6 +19,8 @@
 		435E91731C5AE62F0065F85E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 435E91721C5AE62F0065F85E /* .gitignore */; };
 		435E91771C5AE74D0065F85E /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 435E91761C5AE74D0065F85E /* ApiKeys.plist */; };
 		435E91791C5AE7740065F85E /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E91781C5AE7740065F85E /* ApiKeys.swift */; };
+		435E917B1C5BEDE30065F85E /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E917A1C5BEDE30065F85E /* NetworkOperation.swift */; };
+		435E917D1C5C37770065F85E /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E917C1C5C37770065F85E /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		435E91721C5AE62F0065F85E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		435E91761C5AE74D0065F85E /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		435E91781C5AE7740065F85E /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
+		435E917A1C5BEDE30065F85E /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		435E917C1C5C37770065F85E /* ForecastService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				430EF0BC1C56B83100F64F72 /* AppDelegate.swift */,
 				430EF0EF1C56BA2800F64F72 /* CurrentWeather.swift */,
 				430EF0BE1C56B83100F64F72 /* ViewController.swift */,
+				435E917A1C5BEDE30065F85E /* NetworkOperation.swift */,
+				435E917C1C5C37770065F85E /* ForecastService.swift */,
 				430EF0C01C56B83100F64F72 /* Main.storyboard */,
 				430EF0C31C56B83100F64F72 /* Assets.xcassets */,
 				430EF0C51C56B83100F64F72 /* LaunchScreen.storyboard */,
@@ -284,7 +290,9 @@
 			files = (
 				430EF0BF1C56B83100F64F72 /* ViewController.swift in Sources */,
 				430EF0F01C56BA2800F64F72 /* CurrentWeather.swift in Sources */,
+				435E917B1C5BEDE30065F85E /* NetworkOperation.swift in Sources */,
 				435E91791C5AE7740065F85E /* ApiKeys.swift in Sources */,
+				435E917D1C5C37770065F85E /* ForecastService.swift in Sources */,
 				430EF0BD1C56B83100F64F72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

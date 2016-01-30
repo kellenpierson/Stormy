@@ -14,21 +14,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var humidityPercentageLabel: UILabel?
     @IBOutlet weak var rainPercentageLabel: UILabel?
 
+    private let forecastAPIKey = valueForAPIKey(keyname: "API_CLIENT_ID")
+    let coordinate: (lat: Double, long: Double) = (37.8267,-122.423)
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let plistPath = NSBundle.mainBundle().pathForResource("CurrentWeather", ofType: "plist"),
-        let weatherDictionary = NSDictionary(contentsOfFile: plistPath),
-        let currentWeatherDictionary = weatherDictionary["currently"] as? [String: AnyObject] {
-
-            let currentWeather = CurrentWeather(weatherDictionary: currentWeatherDictionary)
-
-            currentTemperatureLabel?.text = "\(currentWeather.temperature)º"
-            humidityPercentageLabel?.text = "\(currentWeather.humidity)%"
-            rainPercentageLabel?.text = "\(currentWeather.precipProbability)%"
-
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.lat, long: coordinate.long) {
+            (let currently) in
+            if let currentWeather = currently {
+                // Update UI
+                dispatch_async(dispatch_get_main_queue()) {
+                    // Execute closure
+                    if let temperature = currentWeather.temperature {
+                        self.currentTemperatureLabel?.text = "\(temperature)º"
+                    }
+                    if let humidity = currentWeather.humidity {
+                        self.humidityPercentageLabel?.text = "\(humidity)%"
+                    }
+                    if let precipitation = currentWeather.precipProbability {
+                        self.rainPercentageLabel?.text = "\(precipitation)%"
+                    }
+                }
+            }
         }
+
+
     }
 
     override func didReceiveMemoryWarning() {
