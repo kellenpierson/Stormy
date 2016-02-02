@@ -35,33 +35,67 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCF-ie-K0P">
-                                <rect key="frame" x="207" y="430" width="52" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCF-ie-K0P">
+                                <rect key="frame" x="208" y="429" width="50.5" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="38%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNN-zj-hn1">
-                                <rect key="frame" x="352" y="429" width="52" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNN-zj-hn1">
+                                <rect key="frame" x="353" y="429" width="50.5" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz Island, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfO-z8-lS7">
+                                <rect key="frame" x="258" y="126" width="163.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS4-qd-yCl">
+                                <rect key="frame" x="254" y="533.5" width="92" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z7I-9f-crc">
+                                <rect key="frame" x="278" y="50" width="43" height="43"/>
+                                <state key="normal" image="refresh"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="Pmv-9V-0vn">
+                                <rect key="frame" x="194" y="108" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cii-JK-XCC"/>
+                                    <constraint firstAttribute="width" constant="60" id="qqE-7X-lmN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.29019607843137252" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="tfO-z8-lS7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z7I-9f-crc" secondAttribute="bottom" constant="26" id="7TO-VE-KcD"/>
                             <constraint firstItem="bQE-i2-Rka" firstAttribute="top" secondItem="V0B-K4-dI2" secondAttribute="bottom" constant="5" id="88l-2x-80N"/>
+                            <constraint firstItem="nS4-qd-yCl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8fz-l9-JMk"/>
+                            <constraint firstItem="tfO-z8-lS7" firstAttribute="leading" secondItem="Pmv-9V-0vn" secondAttribute="trailing" constant="4" id="Cp3-3H-GkX"/>
+                            <constraint firstItem="V0B-K4-dI2" firstAttribute="top" secondItem="tfO-z8-lS7" secondAttribute="bottom" priority="750" constant="54" id="MUJ-N0-1UL"/>
                             <constraint firstItem="sRg-3b-Woi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="65" id="QA4-hg-XfO"/>
                             <constraint firstItem="sRg-3b-Woi" firstAttribute="top" secondItem="V0B-K4-dI2" secondAttribute="bottom" constant="5" id="RXj-Qj-AWh"/>
                             <constraint firstItem="V0B-K4-dI2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SdF-eE-rCk"/>
                             <constraint firstItem="qCF-ie-K0P" firstAttribute="top" secondItem="sRg-3b-Woi" secondAttribute="bottom" constant="8.5" id="WEC-Vw-VTV"/>
+                            <constraint firstItem="z7I-9f-crc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="bHQ-BH-FgP"/>
                             <constraint firstItem="bQE-i2-Rka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="79" id="cW7-za-G48"/>
                             <constraint firstItem="qCF-ie-K0P" firstAttribute="centerX" secondItem="sRg-3b-Woi" secondAttribute="centerX" id="dSs-6c-Kq5"/>
                             <constraint firstItem="vNN-zj-hn1" firstAttribute="top" secondItem="bQE-i2-Rka" secondAttribute="bottom" constant="8.5" id="f46-zv-JPh"/>
                             <constraint firstItem="sRg-3b-Woi" firstAttribute="top" secondItem="V0B-K4-dI2" secondAttribute="bottom" constant="5" id="ffG-cn-aJU"/>
+                            <constraint firstItem="nS4-qd-yCl" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qCF-ie-K0P" secondAttribute="bottom" constant="30" id="hZU-4F-Bl1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nS4-qd-yCl" secondAttribute="bottom" priority="750" constant="40" id="jWr-eU-Uf5"/>
                             <constraint firstItem="V0B-K4-dI2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kEs-dO-qk2"/>
+                            <constraint firstItem="Pmv-9V-0vn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="z7I-9f-crc" secondAttribute="bottom" constant="8" id="leL-w6-Igl"/>
+                            <constraint firstItem="Pmv-9V-0vn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-76" id="qkW-0h-V5z"/>
                             <constraint firstItem="vNN-zj-hn1" firstAttribute="centerX" secondItem="bQE-i2-Rka" secondAttribute="centerX" id="rGd-uz-9Ms"/>
+                            <constraint firstItem="V0B-K4-dI2" firstAttribute="top" secondItem="Pmv-9V-0vn" secondAttribute="bottom" priority="750" constant="36" id="sX3-7X-ZJ1"/>
                             <constraint firstItem="sRg-3b-Woi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-66.5" id="trT-vd-xjl"/>
+                            <constraint firstItem="z7I-9f-crc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zG5-Cl-VGa"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -72,6 +106,8 @@
                     </view>
                     <connections>
                         <outlet property="currentTemperatureLabel" destination="V0B-K4-dI2" id="8GY-WW-MIC"/>
+                        <outlet property="currentWeatherIcon" destination="Pmv-9V-0vn" id="1Nc-EP-d7N"/>
+                        <outlet property="currentWeatherSummary" destination="nS4-qd-yCl" id="ooJ-1p-0Mc"/>
                         <outlet property="humidityPercentageLabel" destination="qCF-ie-K0P" id="cwu-l9-kwU"/>
                         <outlet property="rainPercentageLabel" destination="vNN-zj-hn1" id="DRB-3Q-LCe"/>
                     </connections>
@@ -80,4 +116,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="default" width="30" height="30"/>
+        <image name="refresh" width="43" height="43"/>
+    </resources>
 </document>
