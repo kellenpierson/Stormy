@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class NetworkOperation {
 
@@ -38,14 +39,35 @@ class NetworkOperation {
                         completion(jsonDictionary)
                     } catch {
                         print(error)
+
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            let alertController = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .Alert)
+                            let action = UIAlertAction(title: "Okay", style: .Default, handler: nil)
+                            alertController.addAction(action)
+                            UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+                        })
                     }
 
                 default:
                     print("GET request not successful. HTTP status code: \(httpResponse.statusCode)")
+
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        let alertController = UIAlertController(title: "Error", message: "Request not successful. HTTP status code: \(httpResponse.statusCode)", preferredStyle: .Alert)
+                        let action = UIAlertAction(title: "Okay", style: .Default, handler: nil)
+                        alertController.addAction(action)
+                        UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+                    })
                 }
 
             } else {
                 print("Error: Not a valid HTTP response")
+
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    let alertController = UIAlertController(title: "Error", message: "Not a valid HTTP response", preferredStyle: .Alert)
+                    let action = UIAlertAction(title: "Okay", style: .Default, handler: nil)
+                    alertController.addAction(action)
+                    UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+                })
             }
         }
 
