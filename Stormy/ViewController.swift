@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView?
 
     private let forecastAPIKey = valueForAPIKey(keyname: "API_CLIENT_ID")
-    let coordinate: (lat: Double, long: Double) = (37.8267,-122.423)
+    let coordinate: (lat: Double, long: Double) = (40.576436,-122.324904)
 
     override func viewDidLoad() {
         super.viewDidLoad()
